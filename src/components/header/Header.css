@@ -1,20 +1,21 @@
-.sidemargin{
+/* .sidemargin{
     margin: 0px 350px;
-}
+} */
 
 .headercontainer{
-    background-color: rgb(255, 255, 255);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index:100;
+    /* background-color: rgb(110, 109, 109); */
+    /* position: fixed; */
+    /* top: 0; */
+    /* left: 0; */
+    max-width: 100%;
+    /* z-index:100; */
     padding: 5px 0px;
+    margin: 0px 350px
 
 }
 
 .navigation{
-    background-color: rgb(255, 255, 255);
+    /* background-color: rgb(181, 55, 55); */
     border-radius: 20px;
     display: flex;
     height: 80px;
