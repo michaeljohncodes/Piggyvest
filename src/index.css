@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+  --breakpoint-2xlarge: 1440px;
+  --breakpoint-xlarge: 1280px;
+  --breakpoint-large: 1024px;
+  --breakpoint-tablet: 800px;
+  --breakpoint-mobile: 500px;
+}
+
+:root {
+  font-family: "Montserrat", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  background-color: #f2f7f8;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+}
+
+button {
+  font-family: "Montserrat", system-ui;
+}
