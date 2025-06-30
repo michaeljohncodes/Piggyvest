@@ -2,8 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Button from "../components/reuseable/Button";
 import heroimage from "../assets/girl.png";
-// import iphonelogo from "../assets/apple-logo";
-// import applelogo from "../assets/apple-logo2.png";
+import applelogo from "../assets/apple-logo2.png";
+import googleplaylogo from "../assets/google-play.png";
 
 const Home = () => {
   return (
@@ -23,7 +23,6 @@ const Home = () => {
           </div>
 
           <h1 className=" text-5xl font-bold my-10 w-3/4">
-            {" "}
             The Better Way to Save & Invest
           </h1>
           <p className="w-3/4 my-10">
@@ -33,20 +32,32 @@ const Home = () => {
 
           <div className=" flex gap-3 my-4">
             <Button
-              icon=""
+              icon={
+                <img
+                  src={applelogo}
+                  alt=""
+                  style={{ width: "25px", marginLeft: "10px" }}
+                />
+              }
               title="Get on iPhone"
               bgColor="#122231"
               Color="#fff"
               borderRadius="10px"
-            />
+            ></Button>
 
             <Button
-              icon="icon"
+              icon={
+                <img
+                  src={googleplaylogo}
+                  alt=""
+                  style={{ width: "25px", marginLeft: "10px" }}
+                />
+              }
               title="Get on Android"
               bgColor="#122231"
               Color="#fff"
               borderRadius="10px"
-            />
+            ></Button>
           </div>
         </div>
       </main>
