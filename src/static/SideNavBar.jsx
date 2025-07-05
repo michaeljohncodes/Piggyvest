@@ -1,0 +1,98 @@
+// import React from "react";
+// import Button from "../components/reuseable/Button";
+// import { Link } from "react-router-dom";
+
+// const SideNavBar = ({ handleToggle }) => {
+//   return (
+//     <div className=" bg-[#f2f7f8] min-h-[100vh] fixed w-full flex items-center justify-center border">
+//       <div className=" flex flex-col items-center  gap-5 ">
+//         <nav>Save</nav>
+//         <Link onClick={handleToggle} to="/invest">
+//           {" "}
+//           <nav>Invest</nav>
+//         </Link>
+//         <Link onClick={handleToggle} to="/stories">
+//           {" "}
+//           <nav>Stories</nav>
+//         </Link>
+//         <nav>FAQs</nav>
+//         <nav>Resources</nav>
+//         <Button borderColor="#122231" title="Sign In" />
+//         <Button
+//           title="Create free account"
+//           bgColor="#122231"
+//           textColor="#fff"
+//         />
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default SideNavBar;
+
+import React, { useState } from "react";
+import { IoMenu } from "react-icons/io5";
+import { FaTimes } from "react-icons/fa";
+import { MdKeyboardArrowDown } from "react-icons/md";
+// import PiggyBtn from "../components/reusable/PiggyBtn";
+
+function SideNavBar() {
+  const [sideNav, setSideNav] = useState(false);
+  return (
+    <div>
+      <div className="w-[100%] flex justify-between items-center p-[20px] fixed bg-white min-tablet:hidden ">
+        <div>
+          <img
+            className="bg-transparent"
+            src="https://storage.googleapis.com/piggyvestwebsite/piggywebsite2020/logo_08e6965627/logo_08e6965627.svg"
+            alt=""
+          />
+        </div>
+
+        <div
+          onClick={() => {
+            setSideNav(!sideNav);
+          }}
+        >
+          {sideNav ? (
+            <FaTimes className="w-[50px] h-[50px]" />
+          ) : (
+            <IoMenu className="w-[50px] h-[50px]" />
+          )}
+        </div>
+      </div>
+
+      <div
+        className={
+          !sideNav
+            ? "hidden"
+            : "w-[100%] h-screen bg-[#f2f7f8]  space-y-[30px] px-[10px]"
+        }
+      >
+        <div className=" flex flex-col items-center pt-[50px]   gap-y-[30px] ">
+          <span className="flex items-center gap-x-[2px]">
+            Save <MdKeyboardArrowDown />{" "}
+          </span>
+          <span>Invest</span>
+          <span>Stories</span>
+          <span>FAQS</span>{" "}
+          <span className="flex items-center gap-x-[2px]">
+            Resources <MdKeyboardArrowDown />
+          </span>
+          <span>Shop</span>
+        </div>
+        <div className="w-[100%]  border space-y-[20px]">
+          <button className="w-[100%] p-[10px] rounded-[30px]">Sign In</button>
+
+          <button className="w-[100%] p-[10px] rounded-[30px]">
+            create free account
+          </button>
+
+          {/* <PiggyBtn title="Sign In" className={"border w-[100%]"} />
+          <PiggyBtn title="Create fre Account" /> */}
+        </div>
+      </div>
+    </div>
+  );
+}
+export default SideNavBar;

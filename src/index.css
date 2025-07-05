@@ -1,10 +1,10 @@
 @import "tailwindcss";
 
 @theme {
-  --breakpoint-2xlarge: 1440px;
-  --breakpoint-xlarge: 1280px;
-  --breakpoint-large: 1024px;
-  --breakpoint-tablet: 800px;
+  --breakpoint-1440screen: 1440px;
+  --breakpoint-1280screen: 1280px;
+  --breakpoint-1024screen: 1024px;
+  --breakpoint-tablet: 768px;
   --breakpoint-mobile: 500px;
 }
 

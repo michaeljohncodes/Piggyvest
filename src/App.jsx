@@ -8,6 +8,7 @@ import Invest from "./pages/Invest";
 import Stories from "./pages/Stories";
 import FAQs from "./pages/FAQs";
 import Resources from "./pages/Resources";
+import Sign_in from "./pages/Sign_in";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
           <Route path="/Stories" element={<Stories />} />
           <Route path="/FAQs" element={<FAQs />} />
           <Route path="/Resources" element={<Resources />} />
+          <Route path="/Sign_in" element={<Sign_in />} />
         </Routes>
         <Footer />
       </BrowserRouter>
