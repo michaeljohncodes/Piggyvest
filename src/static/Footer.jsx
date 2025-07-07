@@ -30,12 +30,12 @@ const Footer = () => {
       </section>
 
       <section className=" flex gap-30 w-full align-top my-20 justify-between ">
-        <main className=" align-top justify-items-center ">
-          <img src={logo2} alt="" className="min-w-40" />
-          <img src={stamp} alt="" className="min-w-10 my-5" />
+        <main className=" align-top justify-items-center min-w-[10%]">
+          <img src={logo2} alt="" className="" />
+          <img src={stamp} alt="" className="my-5" />
         </main>
-        <main className=" flex w-full justify-between ">
-          <div className=" flex justify-around w-[70%] ">
+        <main className=" flex w-full justify-between gap-[40px]">
+          <div className=" flex justify-between w-[70%] ">
             <div style={{ lineHeight: `30px` }} className="">
               <p>
                 <b>Products</b>

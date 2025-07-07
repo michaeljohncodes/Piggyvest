@@ -289,10 +289,10 @@ function Header() {
             />
           </section>
         </div>
-        <div>
-          {/* <SideNavBar /> */}
-        </div>
       </header>
+      <div>
+        {/* <SideNavBar /> */}
+      </div>
     </>
   );
 }
