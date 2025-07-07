@@ -249,7 +249,7 @@ function Header() {
                         />
                       </div>
                       <div className=" w-[70%]">
-                        <p className="font-[600] text-[16px]">Calculatoe</p>
+                        <p className="font-[600] text-[16px]">Calculator</p>
                       </div>
                     </div>
 
@@ -289,8 +289,9 @@ function Header() {
             />
           </section>
         </div>
-
-        <SideNavBar />
+        <div>
+          {/* <SideNavBar /> */}
+        </div>
       </header>
     </>
   );

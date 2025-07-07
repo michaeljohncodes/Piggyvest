@@ -16,10 +16,10 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="max-w-[1280px] px-10 mx-auto">
+    <div className="max-w-[1200px] mx-auto ">
       <section className=" my-20">
         <h1 className=" justify-self-center my-10 text-2xl">As featured in</h1>
-        <div className=" flex gap-5 justify-evenly w-3/4 items-center justify-self-center">
+        <div className=" flex flex-wrap gap-5 justify-evenly w-3/4 items-center justify-self-center">
           <img src={techcaballogo} alt="" className=" size-1/6" />
           <img src={cnbclogo} alt="" className=" size-1/6" />
           <img src={techcrunchlogo} alt="" className=" size-1/6" />
@@ -29,13 +29,13 @@ const Footer = () => {
         </div>
       </section>
 
-      <section className=" flex gap-30 w-full align-top my-20 ">
+      <section className=" flex gap-30 w-full align-top my-20 justify-between ">
         <main className=" align-top justify-items-center ">
-          <img src={logo2} alt="" className="w-40" />
-          <img src={stamp} alt="" className="w-25 my-5" />
+          <img src={logo2} alt="" className="min-w-40" />
+          <img src={stamp} alt="" className="min-w-10 my-5" />
         </main>
-        <main className=" flex gap-30">
-          <div className=" flex gap-30 ">
+        <main className=" flex w-full justify-between ">
+          <div className=" flex justify-around w-[70%] ">
             <div style={{ lineHeight: `30px` }} className="">
               <p>
                 <b>Products</b>
@@ -89,7 +89,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="">
+          <div className=" w-[30%] ">
             <div className=" flex gap-5 justify-end mb-10">
               <Link to="">
                 <img src={facebooklogo} alt="" />
