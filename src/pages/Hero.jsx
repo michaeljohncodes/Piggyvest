@@ -9,7 +9,7 @@ import googleplaylogo from "../assets/google-play.png";
 
 const Hero = () => {
   return (
-    <div className=" max-w-[1280px] px-10 mx-auto my-20 flex justify-between">
+    <div className=" max-w-[1200px] mx-auto my-40 flex justify-between items-center ">
       <main>
         <div className="">
           <div className=" my-10">
@@ -32,7 +32,7 @@ const Hero = () => {
           <h1 className=" text-5xl font-bold my-10 w-3/4">
             The Better Way to Save & Invest
           </h1>
-          <p className="w-3/4 my-10">
+          <p className="w-[350px] my-10">
             Piggyvest helps over 5 million customers achieve their financial
             goals by helping them save and invest with ease
           </p>
@@ -69,9 +69,9 @@ const Hero = () => {
         </div>
       </main>
 
-      <main>
+      <main className=" items-end">
         <div>
-          <img src={heroimage} alt="girl" />
+          <img src={heroimage} alt="girl" className=" w-[900px] " />
         </div>
       </main>
     </div>

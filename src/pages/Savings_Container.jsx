@@ -56,7 +56,9 @@ const Savings = () => {
   return (
     <div className=" my-20 flex flex-col items-center">
       <section className=" text-center">
-        <h1 className=" font-bold text-5xl my-[20px]">Many ways to build your savings</h1>
+        <h1 className=" font-bold text-5xl my-[20px]">
+          Many ways to build your savings
+        </h1>
         <p className=" text-2xl my-[40px]">
           Earn 12%-20% when you save with any of these Piggyvest plans.
         </p>
@@ -87,10 +89,7 @@ const Savings = () => {
                 <button> {data.btnTitle} </button>
               </div>
               <div className=" w-[60%]">
-                <img
-                  src={data.phoneMockup}
-                  alt="phone mockup"
-                />
+                <img src={data.phoneMockup} alt="phone mockup" />
               </div>
             </div>
           </main>
