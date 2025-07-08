@@ -12,8 +12,8 @@ function Header() {
 
   return (
     <>
-      <header className="w-[100%]">
-        <div className=" max-w-[1200px] px-10 py-5 mx-auto flex h-full items-center justify-between ">
+      <header className="w-[100%] fixed top-0 z-10">
+        <div className=" max-w-[1200px] bg-[#f2f7f8] px-10 py-5 mx-auto flex h-full items-center justify-between max-tablet:hidden ">
           <section className=" flex ">
             <main className=" min-w-[20%]">
               <img src={logo} alt="logo here" className=" w-[100%]" />
@@ -289,10 +289,10 @@ function Header() {
             />
           </section>
         </div>
+        <div>
+          <SideNavBar />
+        </div>
       </header>
-      <div>
-        {/* <SideNavBar /> */}
-      </div>
     </>
   );
 }

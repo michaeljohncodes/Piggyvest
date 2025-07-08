@@ -1,35 +1,3 @@
-// import React from "react";
-// import Button from "../components/reuseable/Button";
-// import { Link } from "react-router-dom";
-
-// const SideNavBar = ({ handleToggle }) => {
-//   return (
-//     <div className=" bg-[#f2f7f8] min-h-[100vh] fixed w-full flex items-center justify-center border">
-//       <div className=" flex flex-col items-center  gap-5 ">
-//         <nav>Save</nav>
-//         <Link onClick={handleToggle} to="/invest">
-//           {" "}
-//           <nav>Invest</nav>
-//         </Link>
-//         <Link onClick={handleToggle} to="/stories">
-//           {" "}
-//           <nav>Stories</nav>
-//         </Link>
-//         <nav>FAQs</nav>
-//         <nav>Resources</nav>
-//         <Button borderColor="#122231" title="Sign In" />
-//         <Button
-//           title="Create free account"
-//           bgColor="#122231"
-//           textColor="#fff"
-//         />
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default SideNavBar;
-
 import React, { useState } from "react";
 import { IoMenu } from "react-icons/io5";
 import { FaTimes } from "react-icons/fa";
@@ -40,7 +8,7 @@ function SideNavBar() {
   const [sideNav, setSideNav] = useState(false);
   return (
     <div>
-      <div className="w-[100%] flex justify-between items-center p-[20px] fixed bg-white min-tablet:hidden ">
+      <div className="w-[100%] flex justify-between items-center p-[20px] fixed bg-amber-200 min-tablet:hidden ">
         <div>
           <img
             className="bg-transparent"

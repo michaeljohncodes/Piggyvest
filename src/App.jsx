@@ -1,7 +1,6 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./static/Header";
-import Home from "./pages/Home";
 import Footer from "./static/Footer";
 import PiggyBank from "./pages/PiggyBank";
 import Invest from "./pages/Invest";
@@ -9,6 +8,7 @@ import Stories from "./pages/Stories";
 import FAQs from "./pages/FAQs";
 import Resources from "./pages/Resources";
 import Sign_in from "./pages/Sign_in";
+import Home from "./pages/Home";
 
 const App = () => {
   return (
