@@ -1,12 +1,20 @@
 import React from "react";
 import Hero from "./Hero";
-import Savings_Container from "./Savings_Container"
+import SavingsContainer from "./SavingsContainer";
+import InvestContainer from "./InvestContainer";
+import SaverContainer from "./SaverContainer";
+import TestimonialContainer from "./TestimonialContainer";
+import SecurityContainer from "./SecurityContainer";
 
 const Home = () => {
   return (
     <div>
       <Hero />
-      <Savings_Container />
+      <SecurityContainer />
+      <SavingsContainer />
+      <InvestContainer />
+      <SaverContainer />
+      <TestimonialContainer  />
     </div>
   );
 };

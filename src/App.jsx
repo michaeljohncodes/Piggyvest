@@ -2,13 +2,13 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./static/Header";
 import Footer from "./static/Footer";
-import PiggyBank from "./pages/PiggyBank";
 import Invest from "./pages/Invest";
 import Stories from "./pages/Stories";
 import FAQs from "./pages/FAQs";
 import Resources from "./pages/Resources";
-import Sign_in from "./pages/Sign_in";
+import Sign_in from "./pages/SignIn";
 import Home from "./pages/Home";
+import PiggyBank from "./pages/Piggybank";
 
 const App = () => {
   return (

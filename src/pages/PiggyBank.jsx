@@ -2,10 +2,11 @@ import React from "react";
 
 const PiggyBank = () => {
   return (
-    <div>
-      <h1>This is the piggybank</h1>
-      <img src="./logo.svg" alt="" />
-    </div>
+    <>
+      <div className=" max-w-[1200px] mx-auto my-40 flex justify-between items-center">
+        <h1>This is the piggybank container</h1>
+      </div>
+    </>
   );
 };
 

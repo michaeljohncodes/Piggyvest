@@ -16,7 +16,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="max-w-[1200px] mx-auto ">
+    <div className="max-w-[1200px] mx-auto mt-[100px] ">
       <section className=" my-20">
         <h1 className=" justify-self-center my-10 text-2xl">As featured in</h1>
         <div className=" flex flex-wrap gap-5 justify-evenly w-3/4 items-center justify-self-center">

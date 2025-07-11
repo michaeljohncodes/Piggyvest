@@ -15,9 +15,11 @@ function Header() {
       <header className="w-[100%] fixed top-0 z-10">
         <div className=" max-w-[1200px] bg-[#f2f7f8] py-5 mx-auto flex h-full items-center justify-between max-tablet:hidden ">
           <section className=" flex ">
-            <main className=" min-w-[20%]">
-              <img src={logo} alt="logo here" className=" w-[100%]" />
-            </main>
+            <Link to="/">
+              <main className=" min-w-[20%]">
+                <img src={logo} alt="logo here" className=" w-[100%]" />
+              </main>
+            </Link>
 
             <main className=" flex  mx-12 gap-9 items-center font-medium max-tablet:hidden">
               <div className="">
@@ -47,21 +49,23 @@ function Header() {
                   }
                 >
                   <div className="w-[50%]  flex flex-col gap-y-[30px]">
-                    <div className=" flex justify-between items-center p-[10px] gap-x-[10px]">
-                      <div className=" w-[35px] ">
-                        <img
-                          className="w-[35px] h-[35px]"
-                          src="https://storage.googleapis.com/piggyvestwebsite/piggywebsite2020/piggybank_icon_bd14f39497_7ef36812cd/piggybank_icon_bd14f39497_7ef36812cd.png"
-                          alt=""
-                        />
+                    <Link to="/Piggybank">
+                      <div className=" flex justify-between items-center p-[10px] gap-x-[10px]">
+                        <div className=" w-[35px] ">
+                          <img
+                            className="w-[35px] h-[35px]"
+                            src="https://storage.googleapis.com/piggyvestwebsite/piggywebsite2020/piggybank_icon_bd14f39497_7ef36812cd/piggybank_icon_bd14f39497_7ef36812cd.png"
+                            alt=""
+                          />
+                        </div>
+                        <div className=" w-[70%]">
+                          <p className="font-[600] text-[16px]">PiggyBank</p>
+                          <p className="font-[600] text-[14px]">
+                            Automated Savings
+                          </p>
+                        </div>
                       </div>
-                      <div className=" w-[70%]">
-                        <p className="font-[600] text-[16px]">PiggyBank</p>
-                        <p className="font-[600] text-[14px]">
-                          Automated Savings
-                        </p>
-                      </div>
-                    </div>
+                    </Link>
 
                     <div className=" flex justify-between items-center p-[10px] gap-x-[10px]">
                       <div className=" w-[35px] ">
@@ -147,15 +151,19 @@ function Header() {
               </div>
 
               <div>
+                <Link to="Invest">
                 <nav>Invest</nav>
+                </Link>
               </div>
               <div>
                 <nav>Stories</nav>
               </div>
 
-              <div>
-                <nav>FAQs</nav>
-              </div>
+              <Link to="FAQs">
+                <div>
+                  <nav>FAQs</nav>
+                </div>
+              </Link>
 
               <div>
                 <nav

@@ -1,6 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-const Savings = () => {
+const SavingsContainer = () => {
   const piggyCard = [
     {
       title: "Automated Saving",
@@ -37,7 +38,7 @@ const Savings = () => {
       arrow: "/images/dark_blue_curved_arrow.svg",
     },
     {
-      title: "flex Dollar",
+      title: "Flex Dollar",
       desc: "Reach all your savings goals faster. Save towards multiple goals on your own or with a group.",
       btnTitle: "Target Savings",
       bgColor: "white",
@@ -54,7 +55,7 @@ const Savings = () => {
     },
   ];
   return (
-    <div className=" my-20 flex flex-col items-center">
+    <div className=" my-20 flex flex-col items-center ">
       <section className=" text-center">
         <h1 className=" font-bold text-5xl my-[20px]">
           Many ways to build your savings
@@ -63,32 +64,31 @@ const Savings = () => {
           Earn 12%-20% when you save with any of these Piggyvest plans.
         </p>
       </section>
-      <section className=" flex justify-center max-w-[1200px] flex-wrap bg-[#f2f7f8]">
+      <section className=" flex justify-center max-w-[1440px] flex-wrap bg-[#f2f7f8]">
         {piggyCard?.map((data, i) => (
           <main
             style={{ background: `${data.bgColor}`, borderRadius: "20px" }}
-            className=" h-[450px] w-[480px] m-9 pt-15 pl-10 pr-5 flex flex-col justify-between overflow-hidden"
+            className=" h-[400px] w-[430px] m-[20px] pt-[30px] pr-[15px] pl-[20px] flex flex-col justify-between overflow-hidden"
             key={i}
           >
             <div>
               <h1
                 style={{ color: `${data.color}` }}
-                className=" font-bold text-[35px]"
+                className=" font-bold text-[30px]"
               >
-                {" "}
-                {data.title}{" "}
+                {data.title}
               </h1>
-              <p>{data.desc}</p>
+              <p className=" w-[250px] text-[15px]">{data.desc}</p>
             </div>
             <div
               className="flex justify-between gap-[10]"
               style={{ color: `${data.color}` }}
             >
-              <div className="flex justify-start items-end pb-[40px]">
-                <img src={data.arrow} alt="" />
-                <button> {data.btnTitle} </button>
+              <div className="flex justify-start items-end pb-[40px] gap-[10px]">
+                <img src={data.arrow} alt="" style={{ width: "20%" }} />
+                <button className=" text-[13px] font-medium "> {data.btnTitle}</button>
               </div>
-              <div className=" w-[60%]">
+              <div className=" w-[55%]">
                 <img src={data.phoneMockup} alt="phone mockup" />
               </div>
             </div>
@@ -99,4 +99,4 @@ const Savings = () => {
   );
 };
 
-export default Savings;
+export default SavingsContainer;
