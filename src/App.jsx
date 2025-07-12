@@ -6,9 +6,9 @@ import Invest from "./pages/Invest";
 import Stories from "./pages/Stories";
 import FAQs from "./pages/FAQs";
 import Resources from "./pages/Resources";
-import Sign_in from "./pages/SignIn";
 import Home from "./pages/Home";
 import PiggyBank from "./pages/Piggybank";
+import SignIn from "./pages/SignIn";
 
 const App = () => {
   return (
@@ -22,7 +22,7 @@ const App = () => {
           <Route path="/Stories" element={<Stories />} />
           <Route path="/FAQs" element={<FAQs />} />
           <Route path="/Resources" element={<Resources />} />
-          <Route path="/Sign_in" element={<Sign_in />} />
+          <Route path="/SignIn" element={<SignIn />} />
         </Routes>
         <Footer />
       </BrowserRouter>

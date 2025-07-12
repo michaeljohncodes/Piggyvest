@@ -12,8 +12,8 @@ function Header() {
 
   return (
     <>
-      <header className="w-[100%] fixed top-0 z-10">
-        <div className=" max-w-[1200px] bg-[#f2f7f8] py-5 mx-auto flex h-full items-center justify-between max-tablet:hidden ">
+      <header className="w-[100%] fixed top-0 z-10 bg-[#f2f7f8]">
+        <div className=" max-w-[1200px] py-5 mx-auto flex h-full items-center justify-between max-tablet:hidden ">
           <section className=" flex ">
             <Link to="/">
               <main className=" min-w-[20%]">
@@ -152,7 +152,7 @@ function Header() {
 
               <div>
                 <Link to="Invest">
-                <nav>Invest</nav>
+                  <nav>Invest</nav>
                 </Link>
               </div>
               <div>
