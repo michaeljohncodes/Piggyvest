@@ -72,17 +72,17 @@ const SavingsContainer = () => {
         {piggyCard?.map((data, i) => (
           <main
             style={{ background: `${data.bgColor}`, borderRadius: "20px" }}
-            className=" h-[400px] w-[430px] m-[20px] pt-[30px] pr-[15px] pl-[20px] flex flex-col justify-between overflow-hidden"
+            className=" h-[450px] w-[480px] m-[20px] pt-[30px] pr-[15px] pl-[20px] flex flex-col justify-between overflow-hidden"
             key={i}
           >
             <div className=" h-[50%]">
               <h1
                 style={{ color: `${data.color}` }}
-                className=" font-bold text-[30px]"
+                className=" font-bold text-[35px] my-[10px]"
               >
                 {data.title}
               </h1>
-              <p className=" w-[250px] text-[15px]">{data.desc}</p>
+              <p className=" w-[270px] text-[17px] my-[10px]">{data.desc}</p>
             </div>
             <div
               className="flex justify-between gap-[10] max-h-[60%] "

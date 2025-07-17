@@ -11,7 +11,7 @@ const PiggyBank = () => {
       btnTitle: "Piggy bank",
       color: "#0F60B9",
       bgColor: "white",
-      image: "./images/piggybank_phone_mockup.png",
+      image: "./images/autosave_enabled.png",
     },
     {
       title: "Save on the go",
@@ -116,26 +116,27 @@ const PiggyBank = () => {
             Save without thinking about it.
           </h1>
           <p className=" text-2xl my-[20px]">
-            Enjoy automated savings, quick manual savings top up and competitive interest rates.
+            Enjoy automated savings, quick manual savings top up and competitive
+            interest rates.
           </p>
         </section>
         <section className=" flex justify-center max-w-[1440px] flex-wrap bg-[#f2f7f8]">
           {thinkCards?.map((card, i) => (
             <main
               style={{ background: `${card.bgColor}`, borderRadius: "20px" }}
-              className=" h-[500px] w-[300px] m-[20px] pt-[30px] px-[20px] flex flex-col justify-between overflow-hidden "
+              className=" h-[500px] w-[350px] m-[20px] pt-[30px] px-[25px] flex flex-col justify-between overflow-hidden "
               key={i}
             >
-              <div>
+              <div className=" max-h-[50%]">
                 <h1
                   style={{ color: `${card.color}` }}
                   className=" font-bold text-[30px] "
                 >
                   {card.title}
                 </h1>
-                <p className=" w-[100%] text-[15px] py-[10px]">{card.desc}</p>
+                <p className=" w-[80%] text-[15px] py-[10px]">{card.desc}</p>
               </div>
-              <div className=" max-w-[100%] max-h-[50%] ">
+              <div className=" max-w-[100%] min-h-[60%] mb-[-10px]">
                 <img src={card.image} alt="phone mockup" />
               </div>
             </main>
@@ -156,7 +157,7 @@ const PiggyBank = () => {
               the boss of your savings, choose how you want to save.
             </p>
           </div>
-          <div className="overflow-hidden w-[55%] contain-content">
+          <div className="overflow-hidden w-[55%] contain-content ">
             <img
               src="./images/lady_afro_hair_smile.png"
               alt="girl"
