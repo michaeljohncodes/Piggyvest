@@ -18,8 +18,8 @@ const SavingsContainer = () => {
       btnTitle: "Safe Lock",
       bgColor: "white",
       color: "#2295F2",
-      arrow: "/images/dark_blue_curved_arrow.svg",
-      phoneMockup: "./images/piggybank_phone_mockup.png",
+      arrow: "/images/light_blue_curved_arrow.svg",
+      phoneMockup: "./images/safelock_phone_mockup.png",
     },
     {
       title: "Goal-oriented Savings",
@@ -27,7 +27,8 @@ const SavingsContainer = () => {
       btnTitle: "Target Savings",
       bgColor: "white",
       color: "#39C277",
-      arrow: "/images/dark_blue_curved_arrow.svg",
+      arrow: "/images/green_curved_arrow.svg",
+      phoneMockup: "./images/target_savings_phone_mockup.png",
     },
     {
       title: "Flex Naira",
@@ -35,7 +36,8 @@ const SavingsContainer = () => {
       btnTitle: "Target Savings",
       color: "#E5489B",
       bgColor: "white",
-      arrow: "/images/dark_blue_curved_arrow.svg",
+      arrow: "/images/pink_curved_arrow.svg",
+      phoneMockup: "./images/flex_naira_phone_mockup.png",
     },
     {
       title: "Flex Dollar",
@@ -43,7 +45,8 @@ const SavingsContainer = () => {
       btnTitle: "Target Savings",
       bgColor: "white",
       color: "#0C1825",
-      arrow: "/images/dark_blue_curved_arrow.svg",
+      arrow: "/images/black_curved_arrow.svg",
+      phoneMockup: "./images/flex_dollar_phone_mockup.png",
     },
     {
       title: "House Money",
@@ -51,7 +54,8 @@ const SavingsContainer = () => {
       btnTitle: "Target Savings",
       bgColor: "white",
       color: "#FF783C",
-      arrow: "/images/dark_blue_curved_arrow.svg",
+      arrow: "/images/orange_curved_arrow.svg",
+      phoneMockup: "./images/houseMoney_phone_mockup.png",
     },
   ];
   return (
@@ -71,7 +75,7 @@ const SavingsContainer = () => {
             className=" h-[400px] w-[430px] m-[20px] pt-[30px] pr-[15px] pl-[20px] flex flex-col justify-between overflow-hidden"
             key={i}
           >
-            <div>
+            <div className=" h-[50%]">
               <h1
                 style={{ color: `${data.color}` }}
                 className=" font-bold text-[30px]"
@@ -81,14 +85,17 @@ const SavingsContainer = () => {
               <p className=" w-[250px] text-[15px]">{data.desc}</p>
             </div>
             <div
-              className="flex justify-between gap-[10]"
+              className="flex justify-between gap-[10] max-h-[60%] "
               style={{ color: `${data.color}` }}
             >
-              <div className="flex justify-start items-end pb-[40px] gap-[10px]">
-                <img src={data.arrow} alt="" style={{ width: "20%" }} />
-                <button className=" text-[13px] font-medium "> {data.btnTitle}</button>
+              <div className="flex justify-between items-center pt-[150px] gap-[5px]">
+                <img src={data.arrow} alt="" style={{ minwidth: "20%" }} />
+                <button className=" text-[13px] font-medium ">
+                  {" "}
+                  {data.btnTitle}
+                </button>
               </div>
-              <div className=" w-[55%]">
+              <div className=" max-w-[55%] ">
                 <img src={data.phoneMockup} alt="phone mockup" />
               </div>
             </div>

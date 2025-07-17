@@ -13,8 +13,17 @@ const SaverContainer = () => {
             their savings culture and how Piggyvest has helped them.
           </h3>
         </div>
-        <div className="w-[100%] h-[400px] mx-auto flex justify-between items-center border-4 rounded-[30px] ">
-          <video src="" style={{ scale: "100%" }} />
+        <div className="w-[100%] h-[400px] mx-auto flex justify-between items-center ">
+          <iframe
+            width="100%"
+            height="100%"
+            src="https://www.youtube.com/embed/2EnGMGxKuII?si=FheL7xtBxdsvMS0h"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            className=" rounded-[30px]"
+          ></iframe>
         </div>
       </section>
     </div>

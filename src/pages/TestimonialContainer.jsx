@@ -11,10 +11,10 @@ const TestimonialContainer = () => {
         <div className=" py-[20px] w-[100%] ">
           <div className="flex ">
             <img
-              src={"./images/hijab_girl.png"}
+              src={"./images/lady_staff_standing.png"}
               alt=""
               style={{
-                width: "8%",
+                maxWidth: "10%",
                 borderRadius: "30px",
                 margin: "0px -10px 0px 0px",
               }}
@@ -23,7 +23,25 @@ const TestimonialContainer = () => {
               src={"./images/hijab_girl.png"}
               alt=""
               style={{
-                width: "8%",
+                maxWidth: "10%",
+                borderRadius: "30px",
+                margin: "0px -10px 0px 0px",
+              }}
+            />
+            <img
+              src={"./images/massive_data_discount.png"}
+              alt=""
+              style={{
+                maxWidth: "10%",
+                borderRadius: "30px",
+                margin: "0px -10px 0px 0px",
+              }}
+            />
+            <img
+              src={"./images/"}
+              alt=""
+              style={{
+                maxWidth: "10%",
                 borderRadius: "30px",
                 margin: "0px -10px 0px 0px",
               }}
@@ -32,25 +50,7 @@ const TestimonialContainer = () => {
               src={"./images/hijab_girl.png"}
               alt=""
               style={{
-                width: "8%",
-                borderRadius: "30px",
-                margin: "0px -10px 0px 0px",
-              }}
-            />
-            <img
-              src={"./images/hijab_girl.png"}
-              alt=""
-              style={{
-                width: "8%",
-                borderRadius: "30px",
-                margin: "0px -10px 0px 0px",
-              }}
-            />
-            <img
-              src={"./images/hijab_girl.png"}
-              alt=""
-              style={{
-                width: "8%",
+                maxWidth: "10%",
                 borderRadius: "30px",
                 margin: "0px 0px 0px 0px",
               }}
