@@ -1,10 +1,10 @@
 import React from "react";
-import Hero from "./Hero";
-import SavingsContainer from "./SavingsContainer";
-import InvestContainer from "./InvestContainer";
-import SaverContainer from "./SaverContainer";
-import TestimonialContainer from "./TestimonialContainer";
-import SecurityContainer from "./SecurityContainer";
+import SavingsContainer from "../layouts/home/SavingsContainer";
+import InvestContainer from "../layouts/home/InvestContainer";
+import SaverContainer from "../layouts/home/SaverContainer";
+import TestimonialContainer from "../layouts/home/TestimonialContainer";
+import SecurityContainer from "../layouts/home/SecurityContainer";
+import Hero from "../layouts/home/Hero";
 
 const Home = () => {
   return (
@@ -14,7 +14,7 @@ const Home = () => {
       <SavingsContainer />
       <InvestContainer />
       <SaverContainer />
-      <TestimonialContainer  />
+      <TestimonialContainer />
     </div>
   );
 };

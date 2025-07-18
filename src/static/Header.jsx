@@ -1,6 +1,5 @@
 import { LuChevronDown } from "react-icons/lu";
 import Button from "../components/reuseable/Button";
-// import { RxHamburgerMenu, RxCross1 } from "react-icons/rx";
 import { Link } from "react-router-dom";
 import logo from "../../public/logo.svg";
 import SideNavBar from "./SideNavBar";

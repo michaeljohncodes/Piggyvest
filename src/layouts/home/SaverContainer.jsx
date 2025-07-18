@@ -13,7 +13,7 @@ const SaverContainer = () => {
             their savings culture and how Piggyvest has helped them.
           </h3>
         </div>
-        <div className="w-[100%] h-[400px] mx-auto flex justify-between items-center ">
+        <div className="w-[100%] h-[450px] mx-auto flex justify-between items-center ">
           <iframe
             width="100%"
             height="100%"
@@ -22,7 +22,7 @@ const SaverContainer = () => {
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen
-            className=" rounded-[30px]"
+            className=" rounded-[25px]"
           ></iframe>
         </div>
       </section>
