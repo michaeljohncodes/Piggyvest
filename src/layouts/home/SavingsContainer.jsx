@@ -1,5 +1,3 @@
-import React from "react";
-import { Link } from "react-router-dom";
 
 const SavingsContainer = () => {
   const piggyCard = [
@@ -33,7 +31,7 @@ const SavingsContainer = () => {
     {
       title: "Flex Naira",
       desc: "Save, transfer, manage, organise, and withdraw your money at any time.",
-      btnTitle: "Target Savings",
+      btnTitle: "Flex Naira",
       color: "#E5489B",
       bgColor: "white",
       arrow: "/images/pink_curved_arrow.svg",
@@ -42,7 +40,7 @@ const SavingsContainer = () => {
     {
       title: "Flex Dollar",
       desc: "Reach all your savings goals faster. Save towards multiple goals on your own or with a group.",
-      btnTitle: "Target Savings",
+      btnTitle: "Flex Dollar",
       bgColor: "white",
       color: "#0C1825",
       arrow: "/images/black_curved_arrow.svg",
@@ -51,7 +49,7 @@ const SavingsContainer = () => {
     {
       title: "House Money",
       desc: "Save, transfer, manage, organise, and withdraw your money at any time.",
-      btnTitle: "Target Savings",
+      btnTitle: "House Money",
       bgColor: "white",
       color: "#FF783C",
       arrow: "/images/orange_curved_arrow.svg",
@@ -59,7 +57,7 @@ const SavingsContainer = () => {
     },
   ];
   return (
-    <div className=" my-20 flex flex-col items-center ">
+    <div className=" my-[100px] flex flex-col items-center ">
       <section className=" text-center">
         <h1 className=" font-bold text-5xl my-[20px]">
           Many ways to build your savings
@@ -68,34 +66,33 @@ const SavingsContainer = () => {
           Earn 12%-20% when you save with any of these Piggyvest plans.
         </p>
       </section>
-      <section className=" flex justify-center max-w-[1440px] flex-wrap bg-[#f2f7f8]">
+      <section className=" flex gap-[30px] justify-center max-w-[1800px] flex-wrap bg-[#f2f7f8]">
         {piggyCard?.map((data, i) => (
           <main
             style={{ background: `${data.bgColor}`, borderRadius: "20px" }}
-            className=" h-[450px] w-[480px] m-[20px] pt-[30px] pr-[15px] pl-[20px] flex flex-col justify-between overflow-hidden"
+            className=" h-[440px] w-[485px] pt-[30px] pr-[15px] pl-[20px] flex flex-col justify-between overflow-hidden"
             key={i}
           >
-            <div className=" h-[50%]">
+            <div className=" h-[50%] flex flex-col gap-[10px]">
               <h1
                 style={{ color: `${data.color}` }}
-                className=" font-bold text-[35px] my-[10px]"
+                className=" font-bold text-[35px]"
               >
                 {data.title}
               </h1>
-              <p className=" w-[270px] text-[17px] my-[10px]">{data.desc}</p>
+              <p className=" w-[280px] text-[16px]">{data.desc}</p>
             </div>
             <div
               className="flex justify-between gap-[10] max-h-[60%] "
               style={{ color: `${data.color}` }}
             >
-              <div className="flex justify-between items-center pt-[150px] gap-[5px]">
+              <div className="flex justify-between items-center pt-[150px] gap-[10px]">
                 <img src={data.arrow} alt="" style={{ minwidth: "20%" }} />
-                <button className=" text-[13px] font-medium ">
-                  {" "}
+                <button className=" text-[15px] font-medium ">
                   {data.btnTitle}
                 </button>
               </div>
-              <div className=" max-w-[55%] ">
+              <div className=" max-w-[60%] ">
                 <img src={data.phoneMockup} alt="phone mockup" />
               </div>
             </div>

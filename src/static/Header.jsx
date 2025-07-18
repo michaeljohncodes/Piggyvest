@@ -12,7 +12,7 @@ function Header() {
   return (
     <>
       <header className="w-[100%] fixed top-0 z-10 bg-[#f2f7f8] ">
-        <div className=" max-w-[1200px] py-5 mx-auto flex h-full items-center justify-between max-tablet:hidden ">
+        <div className=" max-w-[1200px] py-5 mx-auto flex h-full items-center justify-between max-lg:hidden ">
           <section className=" flex ">
             <Link to="/">
               <main className=" min-w-[20%]">
@@ -20,7 +20,7 @@ function Header() {
               </main>
             </Link>
 
-            <main className=" flex  mx-12 gap-9 items-center font-medium max-tablet:hidden">
+            <main className=" flex mx-12 gap-9 items-center font-medium max-tablet:hidden ">
               <div className="">
                 <nav
                   onMouseOver={() => {
@@ -278,7 +278,7 @@ function Header() {
             </main>
           </section>
 
-          <section className=" flex gap-1 max-tablet:hidden">
+          <section className=" flex gap-1 max-lg:hidden mr-[20px]">
             <Link to="/Sign_in">
               <Button
                 title="Sign In"

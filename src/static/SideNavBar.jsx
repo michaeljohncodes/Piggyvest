@@ -8,7 +8,7 @@ function SideNavBar() {
   const [sideNav, setSideNav] = useState(false);
   return (
     <div>
-      <div className="w-[100%] flex justify-between items-center p-[20px] fixed bg-amber-200 min-tablet:hidden ">
+      <div className="w-[100%] flex justify-between items-center p-[20px] fixed bg-amber-200 min-lg:hidden ">
         <div>
           <img
             className="bg-transparent"

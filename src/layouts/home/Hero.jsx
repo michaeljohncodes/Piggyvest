@@ -9,12 +9,11 @@ import playstoreLogo from "../../assets/google-play.png"
 const Hero = () => {
   return (
     <main className="">
-      <div className=" max-w-[1200px] mx-auto my-22 py-[150px] flex justify-between items-center ">
-        <main>
-          <div className="">
-            <div className=" my-10">
+      <div className=" max-w-[1200px] mx-auto mt-[100px] py-[100px] flex justify-between items-center">
+        <main className=" flex flex-col gap-[35px]">
+            <div className="">
               <Link to="/">
-                <main className=" flex w-[350px] h-11 bg-blue-400 text-white items-center justify-center rounded-full font-semibold mb-6  ">
+                <main className=" flex w-[350px] h-11 bg-blue-400 text-white items-center justify-center rounded-full font-semibold ">
                   <LuNotebook />
                   <span>The 2024 PiggyVest Savings Report</span>
                   <MdKeyboardArrowRight />
@@ -22,15 +21,15 @@ const Hero = () => {
               </Link>
             </div>
 
-            <h1 className=" text-5xl font-bold my-10 w-3/4">
+            <h1 className=" text-4xl font-bold w-3/4">
               The Better Way to Save & Invest
             </h1>
-            <p className="w-[350px] my-10">
+            <p className="w-[350px] text-[15px] ">
               Piggyvest helps over 5 million customers achieve their financial
               goals by helping them save and invest with ease
             </p>
 
-            <div className=" flex gap-3 my-4">
+            <div className=" flex gap-3 ">
               <Button
                 icon={
                   <img
@@ -62,13 +61,12 @@ const Hero = () => {
                 Color="#fff"
                 borderRadius="10px"
               ></Button>
-            </div>
           </div>
         </main>
 
         <main className=" items-end">
           <div>
-            <img src={girlImage} alt="girl" className=" w-[900px] " />
+            <img src={girlImage} alt="girl" className=" w-[700px] " />
           </div>
         </main>
       </div>

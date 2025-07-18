@@ -16,10 +16,12 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="max-w-[1200px] mx-auto mt-[100px] ">
-      <section className=" my-20">
-        <h1 className=" justify-self-center my-10 text-2xl">As featured in</h1>
-        <div className=" flex flex-wrap gap-5 justify-evenly w-3/4 items-center justify-self-center">
+    <div className="max-w-[1200px] mx-auto flex flex-col max-lg:flex-wrap ">
+      <section className="">
+        <h1 className=" justify-self-center my-10 text-3xl font-bold">
+          As featured in
+        </h1>
+        <div className=" flex max-md:flex-wrap justify-between w-3/4 items-center justify-self-center">
           <img src={techcaballogo} alt="" className=" size-1/6" />
           <img src={cnbclogo} alt="" className=" size-1/6" />
           <img src={techcrunchlogo} alt="" className=" size-1/6" />
@@ -29,13 +31,13 @@ const Footer = () => {
         </div>
       </section>
 
-      <section className=" flex gap-30 w-full align-top my-20 justify-between ">
+      <section className=" flex max-md:flex-wrap gap-30 w-full align-top my-20 justify-between ">
         <main className=" align-top justify-items-center min-w-[10%]">
           <img src={logo2} alt="" className="" />
           <img src={stamp} alt="" className="my-5" />
         </main>
-        <main className=" flex w-full justify-between gap-[40px]">
-          <div className=" flex justify-between w-[70%] ">
+        <main className=" flex flex-wrap max-md:flex-wrap w-full justify-between gap-[40px]">
+          <div className=" flex flex-wrap justify-between w-[50%] ">
             <div style={{ lineHeight: `30px` }} className="">
               <p>
                 <b>Products</b>
@@ -89,7 +91,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className=" w-[30%] ">
+          <div className=" w-[35%] ">
             <div className=" flex gap-5 justify-end mb-10">
               <Link to="">
                 <img src={facebooklogo} alt="" />
@@ -108,12 +110,15 @@ const Footer = () => {
               </Link>
             </div>
 
-            <div style={{ textAlign: `right` }} className="">
-              <div className=" mb-5">
+            <div
+              style={{ textAlign: `right` }}
+              className=" flex flex-col gap-[10px]"
+            >
+              <div className="">
                 Tesmot house, Abdulrahman Okene close, Victoria Island, Lagos,
                 Nigeria.
               </div>
-              <div className=" mb-5">
+              <div className="">
                 <Link to="">contact@piggyvest.com</Link>
               </div>
               <div>+234 700 933 9339</div>
@@ -122,18 +127,16 @@ const Footer = () => {
         </main>
       </section>
 
-      <section className=" border-t-gray-300 border-t-2 pt-5">
-        <p>
+      <section className=" flex flex-col gap-[70px] border-t-gray-200 border-t-2 pt-5 mb-[100px]">
+        <p className=" text-[12px] w-[60%]">
           Piggyvest (formerly piggybank.ng) is the leading online savings &
           investing platform in Nigeria. For over 9 years, our customers have
           saved and invested billions of Naira that they would normally be
           tempted to spend
         </p>
-        <p>
-          PV Capital Limited is a fund manager duly licensed by the Securities
-          and Exchange Commission (SEC) of Nigeria
+        <p className=" text-[13px] text-blue-900 font-medium">
+          2016 - 2025 PiggyTech Global Limited - RC 1405222
         </p>
-        <p>2016 - 2025 PiggyTech Global Limited - RC 1405222</p>
       </section>
     </div>
   );
