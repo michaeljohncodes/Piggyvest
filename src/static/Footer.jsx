@@ -18,7 +18,7 @@ const Footer = () => {
   return (
     <div className="max-w-[1200px] mx-auto flex flex-col max-lg:flex-wrap ">
       <section className="">
-        <h1 className=" justify-self-center my-10 text-3xl font-bold">
+        <h1 className=" justify-self-center my-11 text-3xl font-bold">
           As featured in
         </h1>
         <div className=" flex max-md:flex-wrap justify-between w-3/4 items-center justify-self-center">
