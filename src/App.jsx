@@ -6,13 +6,13 @@ import Stories from "./pages/Stories";
 import FAQs from "./pages/FAQs";
 import Resources from "./pages/Resources";
 import Home from "./pages/Home";
-import PiggyBank from "./pages/Piggybank";
 import SignIn from "./pages/SignIn";
 import TargetSavings from "./pages/TargetSavings";
 import FlexDollar from "./pages/FlexDollar";
 import SafeLock from "./pages/SafeLock";
 import FlexNaira from "./pages/FlexNaira";
 import HouseMoney from "./pages/HouseMoney";
+import PiggyBank from "./pages/PiggyBank";
 
 const App = () => {
   return (
@@ -21,7 +21,7 @@ const App = () => {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/Piggybank" element={<PiggyBank />} />
+          <Route path="/PiggyBank" element={<PiggyBank />} />
           <Route path="/TargetSavings" element={<TargetSavings />} />
           <Route path="/FlexDollar" element={<FlexDollar />} />
           <Route path="/SafeLock" element={<SafeLock />} />
