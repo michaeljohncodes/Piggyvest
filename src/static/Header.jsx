@@ -11,8 +11,8 @@ function Header() {
 
   return (
     <>
-      <header className="w-[100%] fixed top-0 z-10 bg-[#f2f7f8] ">
-        <div className=" max-w-[1200px] py-5 mx-auto flex h-full items-center justify-between max-lg:hidden ">
+      <header className="w-[100%] fixed top-0 z-100 bg-[#f2f7f8] border ">
+        <div className=" max-w-[1200px] py-6 mx-auto flex h-full items-center justify-between max-lg:hidden ">
           <section className=" flex ">
             <Link to="/">
               <main className=" min-w-[20%]">
@@ -66,85 +66,102 @@ function Header() {
                       </div>
                     </Link>
 
-                    <div className=" flex justify-between items-center p-[10px] gap-x-[10px]">
-                      <div className=" w-[35px] ">
-                        <img
-                          className="w-[35px] h-[35px]"
-                          src="https://storage.googleapis.com/piggyvestwebsite/piggywebsite2020/targets_icon_a382a2df4f_10353cd31e/targets_icon_a382a2df4f_10353cd31e.png"
-                          alt=""
-                        />
+                    <Link to="/TargetSavings">
+                      <div className=" flex justify-between items-center p-[10px] gap-x-[10px]">
+                        <div className=" w-[35px] ">
+                          <img
+                            className="w-[35px] h-[35px]"
+                            src="https://storage.googleapis.com/piggyvestwebsite/piggywebsite2020/targets_icon_a382a2df4f_10353cd31e/targets_icon_a382a2df4f_10353cd31e.png"
+                            alt=""
+                          />
+                        </div>
+                        <div className=" w-[70%]">
+                          <p className="font-[600] text-[16px]">
+                            Target Savings
+                          </p>
+                          <p className="font-[600] text-[14px]">
+                            Goal-Oriented Savings
+                          </p>
+                        </div>
                       </div>
-                      <div className=" w-[70%]">
-                        <p className="font-[600] text-[16px]">Target Savings</p>
-                        <p className="font-[600] text-[14px]">
-                          Goal-Oriented Savings
-                        </p>
-                      </div>
-                    </div>
+                    </Link>
 
-                    <div className=" flex justify-between items-center p-[10px] gap-x-[10px]">
-                      <div className=" w-[35px] ">
-                        <img
-                          className="w-[35px] h-[35px]"
-                          src="https://storage.googleapis.com/piggyvestwebsite/piggywebsite2020/flex_dollar_icon_b180813700_8c5227fe52/flex_dollar_icon_b180813700_8c5227fe52.png"
-                          alt=""
-                        />
+                    <Link to="/FlexDollar">
+                      <div className=" flex justify-between items-center p-[10px] gap-x-[10px]">
+                        <div className=" w-[35px] ">
+                          <img
+                            className="w-[35px] h-[35px]"
+                            src="https://storage.googleapis.com/piggyvestwebsite/piggywebsite2020/flex_dollar_icon_b180813700_8c5227fe52/flex_dollar_icon_b180813700_8c5227fe52.png"
+                            alt=""
+                          />
+                        </div>
+                        <div className=" w-[70%]">
+                          <p className="font-[600] text-[16px]">Flex Dollar</p>
+                          <p className="font-[600] text-[14px]">
+                            Dollar Savings
+                          </p>
+                        </div>
                       </div>
-                      <div className=" w-[70%]">
-                        <p className="font-[600] text-[16px]">Flex Dollar</p>
-                        <p className="font-[600] text-[14px]">Dollar Savings</p>
-                      </div>
-                    </div>
+                    </Link>
                   </div>
 
                   {/* RIGHT SIDE */}
 
                   <div className="w-[50%]  flex flex-col gap-y-[30px]">
-                    <div className=" flex justify-between items-center p-[10px] gap-x-[10px]">
-                      <div className=" w-[35px] ">
-                        <img
-                          className="w-[35px] h-[35px]"
-                          src="https://storage.googleapis.com/piggyvestwebsite/piggywebsite2020/safelock_icon_7595628576_b010a4fee8/safelock_icon_7595628576_b010a4fee8.png"
-                          alt=""
-                        />
+                    <Link to="/SafeLock">
+                      <div className=" flex justify-between items-center p-[10px] gap-x-[10px]">
+                        <div className=" w-[35px] ">
+                          <img
+                            className="w-[35px] h-[35px]"
+                            src="https://storage.googleapis.com/piggyvestwebsite/piggywebsite2020/safelock_icon_7595628576_b010a4fee8/safelock_icon_7595628576_b010a4fee8.png"
+                            alt=""
+                          />
+                        </div>
+                        <div className=" w-[70%]">
+                          <p className="font-[600] text-[16px]">Safelock</p>
+                          <p className="font-[600] text-[14px]">
+                            Fixed Savings
+                          </p>
+                        </div>
                       </div>
-                      <div className=" w-[70%]">
-                        <p className="font-[600] text-[16px]">Safelock</p>
-                        <p className="font-[600] text-[14px]">Fixed Savings</p>
-                      </div>
-                    </div>
+                    </Link>
 
-                    <div className=" flex justify-between items-center p-[10px] gap-x-[10px]">
-                      <div className=" w-[35px] ">
-                        <img
-                          className="w-[35px] h-[35px]"
-                          src="https://storage.googleapis.com/piggyvestwebsite/piggywebsite2020/flex_naira_icon_1c37272848_635abfe249/flex_naira_icon_1c37272848_635abfe249.png"
-                          alt=""
-                        />
+                    <Link to="/FlexNaira">
+                      <div className=" flex justify-between items-center p-[10px] gap-x-[10px]">
+                        <div className=" w-[35px] ">
+                          <img
+                            className="w-[35px] h-[35px]"
+                            src="https://storage.googleapis.com/piggyvestwebsite/piggywebsite2020/flex_naira_icon_1c37272848_635abfe249/flex_naira_icon_1c37272848_635abfe249.png"
+                            alt=""
+                          />
+                        </div>
+                        <div className=" w-[70%]">
+                          <p className="font-[600] text-[16px]">Flex Naira</p>
+                          <p className="font-[600] text-[14px]">
+                            Flexible Savings
+                          </p>
+                        </div>
                       </div>
-                      <div className=" w-[70%]">
-                        <p className="font-[600] text-[16px]">Flex Naira</p>
-                        <p className="font-[600] text-[14px]">
-                          Flexible Savings
-                        </p>
-                      </div>
-                    </div>
+                    </Link>
 
-                    <div className=" flex justify-between items-center p-[10px] gap-x-[10px]">
-                      <div className=" w-[35px] ">
-                        <img
-                          className="w-[35px] h-[35px]"
-                          src="https://storage.googleapis.com/piggyvestwebsite/piggywebsite2020/house_icon_1_62b781ec0c/house_icon_1_62b781ec0c.png"
-                          alt=""
-                        />
+                    <Link to="/HouseMoney">
+                      <div className=" flex justify-between items-center p-[10px] gap-x-[10px]">
+                        <div className=" w-[35px] ">
+                          <img
+                            className="w-[35px] h-[35px]"
+                            src="https://storage.googleapis.com/piggyvestwebsite/piggywebsite2020/house_icon_1_62b781ec0c/house_icon_1_62b781ec0c.png"
+                            alt=""
+                          />
+                        </div>
+                        <div className=" w-[70%]">
+                          <p className="font-[600] text-[16px]">House Money</p>
+                          <p className="font-[600] text-[14px]">
+                            Semi-Strict Wallet
+                          </p>
+                        </div>
                       </div>
-                      <div className=" w-[70%]">
-                        <p className="font-[600] text-[16px]">House Money</p>
-                        <p className="font-[600] text-[14px]">
-                          Semi-Strict Wallet
-                        </p>
-                      </div>
-                    </div>
+                    </Link>
+
                   </div>
                 </div>
               </div>

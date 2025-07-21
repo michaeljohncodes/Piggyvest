@@ -5,7 +5,7 @@ import playstoreLogo from "../../assets/google-play.png";
 
 const Hero = () => {
   return (
-    <main className=" bg-[#0D60D8] text-white relative ">
+    <main className=" mt-[100px] bg-[#0D60D8] text-white relative ">
       <img
         src="./images/piggy_kolo_storage.png"
         className=" absolute max-w-[25%] right-[0px] bottom-[0px] z-0 "
