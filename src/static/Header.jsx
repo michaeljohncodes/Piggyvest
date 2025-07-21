@@ -11,7 +11,7 @@ function Header() {
 
   return (
     <>
-      <header className="w-[100%] fixed top-0 z-100 bg-[#f2f7f8] border ">
+      <header className="w-[100%] fixed top-0 z-100 bg-[#f2f7f8] ">
         <div className=" max-w-[1200px] py-6 mx-auto flex h-full items-center justify-between max-lg:hidden ">
           <section className=" flex ">
             <Link to="/">
