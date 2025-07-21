@@ -2,8 +2,10 @@ import React from 'react'
 
 const SignIn = () => {
   return (
-    <div>This is the Sign-in page</div>
-  )
+    <div className=" max-w-[1200px] mx-auto my-40 flex justify-between items-center">
+      <h1>this is the sign in page</h1>
+    </div>
+  );
 }
 
-export default SignIn
+export default SignIn;

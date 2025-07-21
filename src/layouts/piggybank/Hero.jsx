@@ -8,7 +8,7 @@ const Hero = () => {
     <main className=" bg-[#0D60D8] text-white relative ">
       <img
         src="./images/piggy_kolo_storage.png"
-        className=" absolute w-[25%] right-[0px] bottom-[0px] z-0 "
+        className=" absolute max-w-[25%] right-[0px] bottom-[0px] z-0 "
       />
       <div className=" max-w-[1200px] mx-auto my-22 pt-[150px] flex justify-between gap-[10px] items-center ">
         <main className=" ">
