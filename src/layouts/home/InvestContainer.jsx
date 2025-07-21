@@ -1,5 +1,3 @@
-import React from "react";
-
 const InvestContainer = () => {
   return (
     <div className=" w-full mx-auto flex flex-wrap justify-between items-center bg-white text-center ">

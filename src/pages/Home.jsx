@@ -1,4 +1,3 @@
-import React from "react";
 import SavingsContainer from "../layouts/home/SavingsContainer";
 import InvestContainer from "../layouts/home/InvestContainer";
 import SaverContainer from "../layouts/home/SaverContainer";

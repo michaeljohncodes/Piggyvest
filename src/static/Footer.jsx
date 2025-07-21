@@ -1,4 +1,3 @@
-import React from "react";
 import techcaballogo from "../assets/techcabal_logo@2x.png";
 import cnbclogo from "../assets/cnbc_logo.png";
 import techcrunchlogo from "../assets/techcrunch_logo.png";

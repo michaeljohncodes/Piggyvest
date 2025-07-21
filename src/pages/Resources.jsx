@@ -1,5 +1,3 @@
-import React from 'react'
-
 const Resources = () => {
   return (
     <div className=" max-w-[1200px] mx-auto mt-[100px] flex justify-between items-center">

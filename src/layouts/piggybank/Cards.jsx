@@ -1,33 +1,30 @@
-import React from 'react'
-
 const Cards = () => {
-const thinkCards = [
-  {
-    title: "Save automatically",
-    desc: "Build a dedicated savings faster on your terms, automatically or manually",
-    btnTitle: "Piggy bank",
-    color: "#0F60B9",
-    bgColor: "white",
-    image: "./images/autosave_enabled.png",
-  },
-  {
-    title: "Save on the go",
-    desc: "Build a dedicated savings faster on your terms, automatically or manually",
-    btnTitle: "Piggy bank",
-    color: "#0F60B9",
-    bgColor: "white",
-    image: "./images/quicksave_phone_mockup.png",
-  },
-  {
-    title: "Build discipline",
-    desc: "Build a dedicated savings faster on your terms, automatically or manually",
-    btnTitle: "Piggy bank",
-    color: "#0F60B9",
-    bgColor: "white",
-    image: "./images/withdraw_from_piggybank_phone_mockup.png",
-  },
-];
-
+  const thinkCards = [
+    {
+      title: "Save automatically",
+      desc: "Build a dedicated savings faster on your terms, automatically or manually",
+      btnTitle: "Piggy bank",
+      color: "#0F60B9",
+      bgColor: "white",
+      image: "./images/autosave_enabled.png",
+    },
+    {
+      title: "Save on the go",
+      desc: "Build a dedicated savings faster on your terms, automatically or manually",
+      btnTitle: "Piggy bank",
+      color: "#0F60B9",
+      bgColor: "white",
+      image: "./images/quicksave_phone_mockup.png",
+    },
+    {
+      title: "Build discipline",
+      desc: "Build a dedicated savings faster on your terms, automatically or manually",
+      btnTitle: "Piggy bank",
+      color: "#0F60B9",
+      bgColor: "white",
+      image: "./images/withdraw_from_piggybank_phone_mockup.png",
+    },
+  ];
 
   return (
     <div className=" my-20 flex flex-col items-center ">
@@ -64,6 +61,6 @@ const thinkCards = [
       </section>
     </div>
   );
-}
+};
 
 export default Cards;

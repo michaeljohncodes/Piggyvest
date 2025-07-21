@@ -1,4 +1,3 @@
-
 const SecurityContainer = () => {
   return (
     <div className=" max-w-[800px] mx-auto flex justify-between items-center text-center ">

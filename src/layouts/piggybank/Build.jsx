@@ -1,5 +1,3 @@
-import React from "react";
-
 const Build = () => {
   return (
     <main className=" bg-[#145ad3] text-white overflow-hidden h-[280px] flex items-center">
