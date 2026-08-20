@@ -7,6 +7,7 @@ import FAQs from "./pages/FAQs";
 import Resources from "./pages/Resources";
 import Home from "./pages/Home";
 import SignIn from "./pages/SignIn";
+// import CreateAccount from "./pages/CreateAccount";
 import TargetSavings from "./pages/TargetSavings";
 import FlexDollar from "./pages/FlexDollar";
 import SafeLock from "./pages/SafeLock";
@@ -32,6 +33,7 @@ const App = () => {
           <Route path="/FAQs" element={<FAQs />} />
           <Route path="/Resources" element={<Resources />} />
           <Route path="/SignIn" element={<SignIn />} />
+          {/* <Route path="/CreateAccount" element={<CreateAccount />} /> */}
         </Routes>
         <Footer />
       </BrowserRouter>

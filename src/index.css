@@ -14,9 +14,9 @@
   font-weight: 400;
   background-color: #f2f7f8;
   font-synthesis: none;
-  text-rendering: optimizeLegibility;
+  /* text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale; */
 }
 
 body {
@@ -25,4 +25,5 @@ body {
 
 button {
   font-family: "Montserrat", system-ui;
+  cursor: pointer;
 }
